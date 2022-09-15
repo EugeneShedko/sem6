@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    <div class="col-xs-6">
+        Адрес сервера: <input id="address" value="http://localhost:8000/" />
+    </div>
+    <div class="col-xs-6">
+        Новое слагаемое: <input type="number" id="summand" value="0.1" step="0.1" />
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-6">
+        <button onclick="refreshSum()">Обновить сумму</button>
+    </div>
+    <div class="col-xs-6">
+        <button onclick="addSummand()">Добавить слагаемое</button>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-6">
+        <div class="panel panel-default">
+            @Html.Raw(ViewBag.refreshSum)
+        </div>
+    </div>
+    <div class="col-xs-6">
+        <div class="panel panel-default">
+            @Html.Raw(ViewBag.addSummand)
+        </div>
+    </div>
+</div>
+
+<script src="~/Scripts/tester.js"></script>

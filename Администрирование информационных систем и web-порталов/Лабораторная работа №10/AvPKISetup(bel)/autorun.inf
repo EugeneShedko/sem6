@@ -1,0 +1,6 @@
+[autorun]
+open=AvPKISetup2.exe
+icon=AvPKISetup2.exe,0
+[autorun.x86]
+open=AvPKISetup2.exe
+icon=AvPKISetup2.exe,0
