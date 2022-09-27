@@ -1,0 +1,5 @@
+﻿  RandServer.cpp
+C:\Users\krayn\Documents\БГТУ\5_semestr\Сетевые приложения\Лаба 8, 9, 10\ConcurrentServer\ServiceLib\RandServer.cpp(11,14): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  TimeServer.cpp
+  Generating Code...
+  ServiceLib.vcxproj -> C:\Users\krayn\Documents\БГТУ\5_semestr\Сетевые приложения\Лаба 8, 9, 10\ConcurrentServer\Debug\ServiceLib.dll

@@ -1,0 +1,3 @@
+﻿  ConcurrentServer.cpp
+D:\Учеба\1 семестр\ПСП\Лабораторные\Lab_8-10\ConcurrentServer\ConcurrentServer\ConcurrentServer\ConcurrentServer.cpp(390,15): warning C4101: nulX: неиспользованная локальная переменная
+  ConcurrentServer.vcxproj -> D:\Учеба\1 семестр\ПСП\Лабораторные\Lab_8-10\ConcurrentServer\ConcurrentServer\Debug\ConcurrentServer.exe

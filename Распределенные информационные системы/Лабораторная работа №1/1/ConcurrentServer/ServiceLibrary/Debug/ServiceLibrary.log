@@ -1,0 +1,5 @@
+﻿  pch.cpp
+  dllmain.cpp
+D:\Учеба\1 семестр\ПСП\Лабораторные\Lab_8-10\ConcurrentServer\ConcurrentServer\ServiceLibrary\RandServer.h(43,16): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+     Создается библиотека D:\Учеба\1 семестр\ПСП\Лабораторные\Lab_8-10\ConcurrentServer\ConcurrentServer\Debug\ServiceLibrary.lib и объект D:\Учеба\1 семестр\ПСП\Лабораторные\Lab_8-10\ConcurrentServer\ConcurrentServer\Debug\ServiceLibrary.exp
+  ServiceLibrary.vcxproj -> D:\Учеба\1 семестр\ПСП\Лабораторные\Lab_8-10\ConcurrentServer\ConcurrentServer\Debug\ServiceLibrary.dll

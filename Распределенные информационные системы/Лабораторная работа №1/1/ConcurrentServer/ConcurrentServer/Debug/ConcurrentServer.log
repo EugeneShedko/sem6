@@ -1,0 +1,5 @@
+﻿  ConcurrentServer.cpp
+D:\Учеба\Распределенные информационные системы\Лабораторная работа №1\1\ConcurrentServer\ConcurrentServer\ConcurrentServer.cpp(390,15): warning C4101: nulX: неиспользованная локальная переменная
+D:\Учеба\Распределенные информационные системы\Лабораторная работа №1\1\ConcurrentServer\ConcurrentServer\ConcurrentServer.cpp(437,59): warning C4474: "sprintf" : для строки формата передано слишком много аргументов
+D:\Учеба\Распределенные информационные системы\Лабораторная работа №1\1\ConcurrentServer\ConcurrentServer\ConcurrentServer.cpp(437,59): message : заполнители и их параметры ожидают переменное число аргументов в количестве 0, но было предоставлено 1
+  ConcurrentServer.vcxproj -> D:\Учеба\Распределенные информационные системы\Лабораторная работа №1\1\ConcurrentServer\Debug\ConcurrentServer.exe
