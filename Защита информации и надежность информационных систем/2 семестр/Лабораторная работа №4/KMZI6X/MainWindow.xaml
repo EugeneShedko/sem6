@@ -1,0 +1,30 @@
+﻿<Window x:Class="KMZI6X.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KMZI6X"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="608">
+    <Grid>
+        <TextBox Name="Decrypted" HorizontalAlignment="Left" Height="74" Margin="246,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="330"/>
+        <TextBox Name="Encrypted" HorizontalAlignment="Left" Height="74" Margin="246,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="329"/>
+        <TextBox Name="Rotors" Text="VII-GAMMA-II" HorizontalAlignment="Left" Height="23" Margin="10,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="177"/>
+        <TextBox Name="Reflector" Text="D" HorizontalAlignment="Left" Height="23" Margin="10,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="177"/>
+        <TextBox Name="StartPos" Text="ABC" HorizontalAlignment="Left" Height="23" Margin="10,177,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="177"/>
+        <TextBox Name="Ring" Text="ABC" HorizontalAlignment="Left" Height="23" Margin="10,221,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="177"/>
+        <TextBox Name="Plugs" Text="KH AB CE" HorizontalAlignment="Left" Height="23" Margin="10,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="177"/>
+        <Button Content="Зашифровать" HorizontalAlignment="Left" Margin="83,298,0,0" VerticalAlignment="Top" Width="104" Click="Button_Click" Height="33"/>
+        <Button Content="Расшифровать" HorizontalAlignment="Left" Margin="246,298,0,0" VerticalAlignment="Top" Width="110" Click="Button_Click_1" Height="33"/>
+
+
+        <Label Content="Рефлектор" HorizontalAlignment="Left" Height="31" Margin="10,64,0,0" VerticalAlignment="Top" Width="150"/>
+        <Label Content="Положение роторов" HorizontalAlignment="Left" Height="31" Margin="10,10,0,0" VerticalAlignment="Top" Width="231"/>
+        <Label Content="Коммут. панель" HorizontalAlignment="Left" Height="31" Margin="10,112,0,0" VerticalAlignment="Top" Width="177"/>
+        <Label Content="Стартовая позиция" HorizontalAlignment="Left" Height="31" Margin="10,156,0,0" VerticalAlignment="Top" Width="150"/>
+        <Label Content="Кольцо" HorizontalAlignment="Left" Height="31" Margin="10,200,0,0" VerticalAlignment="Top" Width="150"/>
+        <Label Content="Шифротекст" HorizontalAlignment="Left" Height="31" Margin="246,133,0,0" VerticalAlignment="Top" Width="150"/>
+        <Label Content="Исходный текст" HorizontalAlignment="Left" Height="31" Margin="246,10,0,0" VerticalAlignment="Top" Width="150"/>
+
+    </Grid>
+</Window>

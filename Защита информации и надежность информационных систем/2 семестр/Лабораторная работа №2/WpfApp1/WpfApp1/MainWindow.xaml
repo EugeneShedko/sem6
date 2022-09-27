@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        xmlns:dvc="clr-namespace:System.Windows.Controls.DataVisualization.Charting;assembly=System.Windows.Controls.DataVisualization.Toolkit"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <RadioButton Content="Шифр Виженера" HorizontalAlignment="Left" Margin="10,29,0,0" VerticalAlignment="Top" AutomationProperties.Name="Visiner" Checked="RadioButton_Checked"/>
+        <RadioButton Content="Шифр Порты" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" AutomationProperties.Name="Port" Checked="RadioButton_Checked"/>
+        <Button Content="Выбрать файл" HorizontalAlignment="Left" Margin="10,88,0,0" VerticalAlignment="Top" Width="120" Click="SelectFile"/>
+        <Button Content="Зашифровать" HorizontalAlignment="Left" Margin="10,120,0,0" VerticalAlignment="Top" Width="120" Click="Encrypt"/>
+        <Button Content="Расшифровать" HorizontalAlignment="Left" Margin="10,150,0,0" VerticalAlignment="Top" Width="120" Click="Decrypt"/>
+        <Label Content="Выберите алгоритм шифрования:" HorizontalAlignment="Left" Margin="10,3,0,0" VerticalAlignment="Top"/>
+        <Grid HorizontalAlignment="Left" Height="400" Margin="215,10,0,0" VerticalAlignment="Top" Width="548">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+        </Grid>
+
+
+    </Grid>
+</Window>
