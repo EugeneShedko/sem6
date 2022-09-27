@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="../js/Req.js"></script>
+<script type="text/javascript"> var req = CreateReq(); </script>
+<script type="text/javascript" src="../js/Header.js"></script>
+<script type="text/javascript" src="../js/XML.js"></script>
+<script type="text/javascript" src="../js/JSON.js"></script>
+<script type="text/javascript" src="../js/JQueryTask.js"></script>
+
+<form  method="POST">
+    <input name="x" type="text" value="0" size="5" maxlength="5" />
+    <input name="y" type="text" value="0" size="5" maxlength="5" />
+    <input name="BAdd" value="Add" type="button" size="10" maxlength="10" onclick="OnClickHeader(this.form.x , this.form.y , this.form.z)"/>
+    <input name="z" type="text" value="0" size="5" maxlength="5" />
+</form>
+
+<form name="FXML"  method="POST">
+    <input name="n" type="text" value="0" size="2" maxlength="2" />
+    <input name="BRand" value="Rand" type="button" size="10" maxlength="10"  onclick="OnClick_XML(this.form.n.value, document.getElementById('xml'))" />
+    &emsp; <span id="xml" class="h2">.....</span>
+</form>
+
+<form name="FXML"  method="POST">
+    <input name="n" type="text" value="0" size="2" maxlength="2" />
+    <input name="BRand" value="Rand" type="button" size="10" maxlength="10"  onclick="OnClick_JSON(this.form.n.value, document.getElementById('json'))" />
+    &emsp; <span id="json" class="h3">.....</span>
+</form>
+
+<form name="FXML"  method="POST">
+    <input name="n" type="text" value="0" size="2" maxlength="2" />
+    <input name="BRand" value="Rand" type="button" size="10" maxlength="10"  onclick="JQuery(this.form.n.value, document.getElementById('json'))" />
+    &emsp; <span id="jsonn" class="h3"></span>
+</form>
+
+</body>
+</html>

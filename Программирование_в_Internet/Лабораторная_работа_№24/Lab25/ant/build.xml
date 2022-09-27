@@ -1,0 +1,96 @@
+<project name="Application" default="copy" >
+
+    <target name="init" >
+        <echo message="Building AS_33114SEA project" />
+        <property name="localserver" value="D:\Programs\TomcatServer\" />
+        <property name="remoteserver" value="\\172.16.193.69\" />
+        <property name="work" value="D:\Учеба\Программирование_в_Internet\Лабораторная_работа_№24\Lab25\" />
+
+    </target>
+
+
+    <target name="compile" depends="init">
+        <delete>
+            <fileset dir="${work}build"/>
+        </delete>
+        <javac srcdir="${work}src" destdir="${work}build" >
+            <classpath>
+                <fileset file="${localserver}lib\servlet-api.jar" />
+                <fileset file="${localserver}lib\jsp-api.jar" />
+                <fileset dir="${work}lib"/>
+            </classpath>
+        </javac>
+    </target>
+
+    <target name="create" depends="compile">
+
+        <delete dir="${localserver}webapps\EndProject\" />
+        <mkdir dir="${localserver}webapps\EndProject\" />
+        <mkdir dir="${localserver}webapps\EndProject\WEB-INF\" />
+        <mkdir dir="${localserver}webapps\EndProject\WEB-INF\classes\" />
+        <mkdir dir="${localserver}webapps\EndProject\WEB-INF\lib\" />
+        <mkdir dir="${localserver}webapps\AS_33114SEA\JS\" />
+        <mkdir dir="${localserver}webapps\AS_33114SEA\JSP\" />
+
+        <!--
+        <mkdir dir="${localserver}webapps\WebDAV\jsp\" />
+        <mkdir dir="${localserver}webapps\WebDAV\JS\" />
+        <mkdir dir="${localserver}webapps\AS_33114SEA\html\" />
+        <mkdir dir="${localserver}webapps\AS_33114SEA\images\" />
+        <mkdir dir="${localserver}webapps\AS_33114SEA\js\" />
+        -->
+
+    </target>
+
+    <target name="copy" depends="create" >
+
+        <copy file="${work}web\WEB-INF\web.xml" todir="${localserver}webapps\EndProject\WEB-INF\" />
+        <copy file="${work}web\index.jsp" todir="${localserver}webapps\EndProject\" />
+        <copy todir="${localserver}webapps\EndProject\WEB-INF\classes">
+            <fileset dir="${work}build" />
+        </copy>
+        <copy todir="${localserver}webapps\EndProject\WEB-INF\lib">
+            <fileset dir="${work}lib" />
+        </copy>
+        <copy todir="${localserver}webapps\EndProject\JS">
+            <fileset dir="${work}web\JS" />
+        </copy>
+        <copy todir="${localserver}webapps\EndProject\JSP">
+            <fileset dir="${work}web\JSP" />
+        </copy>
+
+        <!--
+        <copy todir="${localserver}webapps\AS_33114SEA\html">
+            <fileset dir="${work}html"/>
+        </copy>
+        <copy todir="${localserver}webapps\AS_33114SEA\WEB-INF">
+            <fileset dir="${work}\tld" />
+        </copy>
+        <copy todir="${localserver}webapps\AS_33114SEA\js">
+            <fileset dir="${work}\js" />
+        </copy>
+
+
+        <copy todir="${remoteserver}webapps\AS_33114SEA\html">
+            <fileset dir="${work}html"/>
+        </copy>
+        <copy file="${work}images\me.jpg"
+              todir="${remoteserver}webapps\AS_33114SEA\images\" />
+        <copy file="${work}web.xml"
+              todir="${remoteserver}webapps\AS_33114SEA\WEB-INF\" />
+        <copy todir="${remoteserver}webapps\AS_33114SEA\WEB-INF\classes">
+            <fileset dir="${work}build" />
+        </copy>
+        <copy todir="${remoteserver}webapps\AS_33114SEA\WEB-INF\lib">
+            <fileset dir="${work}lib" />
+        </copy>
+        <copy todir="${remoteserver}webapps\AS_33114SEA\jsp">
+            <fileset dir="${work}\jsp"/>
+        </copy>
+        <copy todir="${remoteserver}webapps\AS_33114SEA\WEB-INF">
+            <fileset dir="${work}\tld" />
+        </copy>
+
+        -->
+    </target>
+</project>

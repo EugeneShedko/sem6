@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style type="text/css">
+.h1 {visibility: visible; color: red}
+.h2 {visibility: hidden }
+</style>
+<script type="text/javascript" src="../js/Req.js"></script>
+<script type="text/javascript"> var req = CreateReq(); </script>
+<script type="text/javascript" src="../js/XML.js"></script>
+<body>
+<b> AJAX Example (XML) </b>
+<form name="FXML"  method="POST">
+  <input name="n" type="text" value="0" size="2" maxlength="2" />
+  <input name="BRand" value="Rand" type="button" size="10" maxlength="10"  onclick="OnClick_XML(this.form.n.value, document.getElementById('xml'))" />
+  &emsp; <span id="xml" class="h2">.....</span>
+</form>
+</body>
+</html>

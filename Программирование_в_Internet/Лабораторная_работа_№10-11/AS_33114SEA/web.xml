@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+ version="2.5">
+
+	<display-name>AS_33114SEA</display-name>
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+	<context-param>
+		<param-name>URL1</param-name>
+		<param-value>http://172.16.193.69:8080/AS_33114SEA/html/education.html</param-value>
+	</context-param>
+	<context-param>
+		<param-name>URL2</param-name>
+		<param-value>http://172.16.193.69:8080/AS_33114SEA/Jjj</param-value>
+	</context-param>
+
+	<filter>
+		<filter-name>F1</filter-name>
+		<filter-class>lab9.F1</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>F1</filter-name>
+		<url-pattern>/Ccc4</url-pattern>
+	</filter-mapping>
+
+	<filter>
+		<filter-name>F2</filter-name>
+		<filter-class>lab9.F2</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>F2</filter-name>
+		<url-pattern>/jsp/Ccc4.jsp</url-pattern>
+	</filter-mapping>
+
+	<filter-mapping>
+		<filter-name>F2</filter-name>
+		<url-pattern>/Ccc4</url-pattern>
+	</filter-mapping>
+
+	<filter>
+		<filter-name>F3</filter-name>
+		<filter-class>lab9.F3</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>F3</filter-name>
+		<url-pattern>/Ccc4</url-pattern>
+	</filter-mapping>
+	
+	<listener>
+		<listener-class>lab9.L1</listener-class>
+	</listener>
+	
+	<listener>
+		<listener-class>lab9.L2</listener-class>
+	</listener>
+
+	<servlet>
+	<servlet-name>Sss</servlet-name>
+	<servlet-class>lab3.Sss</servlet-class>
+</servlet>
+	<servlet-mapping>
+	<servlet-name>Sss</servlet-name>
+	<url-pattern>/Sss</url-pattern>
+</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Sss2</servlet-name>
+		<servlet-class>lab3.Sss2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Sss2</servlet-name>
+		<url-pattern>/Sss2</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Sss3</servlet-name>
+		<servlet-class>lab3.Sss3</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Sss3</servlet-name>
+		<url-pattern>/Sss3</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Sss4</servlet-name>
+		<servlet-class>lab3.Sss4</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Sss4</servlet-name>
+		<url-pattern>/Sss4</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Sss5</servlet-name>
+		<servlet-class>lab3.Sss5</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Sss5</servlet-name>
+		<url-pattern>/Sss5</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Ggg</servlet-name>
+		<servlet-class>lab3.Ggg</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Ggg</servlet-name>
+		<url-pattern>/Ggg</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Afternoon</servlet-name>
+		<servlet-class>lab4.Afternoon</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Afternoon</servlet-name>
+		<url-pattern>/Afternoon</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Jjj</servlet-name>
+		<servlet-class>lab4.Jjj</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Jjj</servlet-name>
+		<url-pattern>/Jjj</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Ttt</servlet-name>
+		<servlet-class>lab5.Ttt</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Ttt</servlet-name>
+		<url-pattern>/Ttt</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Mmm</servlet-name>
+		<servlet-class>lab6.Mmm</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Mmm</servlet-name>
+		<url-pattern>/Mmm</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Ccc</servlet-name>
+		<servlet-class>lab6.Ccc</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Ccc</servlet-name>
+		<url-pattern>/Ccc</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Ccc2</servlet-name>
+		<servlet-class>lab7.Ccc2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Ccc2</servlet-name>
+		<url-pattern>/Ccc2</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Ccc3</servlet-name>
+		<servlet-class>lab7.Ccc3</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Ccc3</servlet-name>
+		<url-pattern>/Ccc3</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Aaa</servlet-name>
+		<servlet-class>lab8.Aaa</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Aaa</servlet-name>
+		<url-pattern>/Aaa</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Bbb</servlet-name>
+		<servlet-class>lab8.Bbb</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Bbb</servlet-name>
+		<url-pattern>/Bbb</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Ccc4</servlet-name>
+		<servlet-class>lab9.Ccc4</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Ccc4</servlet-name>
+		<url-pattern>/Ccc4</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Kkk</servlet-name>
+		<servlet-class>lab10.Kkk</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Kkk</servlet-name>
+		<url-pattern>/Kkk</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SssHeader</servlet-name>
+		<servlet-class>lab31.SssHeader</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>SssHeader</servlet-name>
+	<url-pattern>/SssHeader</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SssXml</servlet-name>
+		<servlet-class>lab31.SssXml</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SssXml</servlet-name>
+		<url-pattern>/SssXml</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SssJSON</servlet-name>
+		<servlet-class>lab31.SssJSON</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SssJSON</servlet-name>
+		<url-pattern>/SssJSON</url-pattern>
+	</servlet-mapping>
+</web-app>

@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="AS_33112SSA(Project)">
+    <output-path>C:/Program Files/Apache Software Foundation/Tomcat 8.5/webapps/AS_33112SSA(Project)</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Lab25/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Lab25" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
